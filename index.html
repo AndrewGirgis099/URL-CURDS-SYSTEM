@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="download (1).png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="text-center mt-5  overflow-hidden">
+            <div class="position-relative title-container mx-auto  overflow-hidden"> 
+                <div class=" mt-5 ">
+                    <h1 class="title p-0 m-0">Bookmarker</h1>
+                </div>
+                <div class="position-absolute  layer d-flex justify-content-center z-n1 ">
+                </div>
+            </div>
+
+            <div class="dot-underline my-5">
+
+            </div>
+    
+        </div>
+        
+        
+        <div class="text-xl-center coloerd-paragraph">
+            <p class="fs-4 fw-bolder"><i class="fa-solid fa-bookmark px-2"></i> Bookmark your favorite sites<i class="fa-solid fa-bookmark px-2"></i> </p>
+    
+        </div>
+    </div>
+
+    
+    <div class="container form-group">
+            <label for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+            <input type="text" id="siteName" class="form-control my-2 " placeholder="Bookmark Name">
+
+            <label for="siteUrl"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+            <input type="text" id="siteUrl" class="form-control my-2" placeholder="Website URL">
+
+            <div class="d-flex justify-content-center align-items-center py-3">
+                <button class="btn btn-coloer text-white px-5" onclick=" addUrl()" id="addUrl">Submit</button>
+            </div>
+
+            <div class="dot-underline my-5">
+
+            </div>
+    </div>
+
+
+
+    <div class="container my-5">
+        <table class="table text-center"  >
+            <thead class="text-center" >
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+
+            <tbody class="text-center " id="tableBody">
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+</body>
+</html>
